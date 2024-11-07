@@ -76,19 +76,19 @@ import math     # Подключил библиотеку математичес
 #  Если пользователь вводит 2, программа запрашивает длину стороны и высоту треугольника, проведенную
 #  к этой стороне, после чего выводит его площадь. Если пользователь вводит что-то другое, программа должна
 #  выдать подходящее сообщение об ошибке.
-proposal = input('''1) Square
-2) Triangle
-Enter a number: ''')
-choice = proposal
-
-if choice == "1":
-    long_square = int(input("Введите длину стороны квадрата: "))
-    sqrt = round(math.sqrt(long_square), 2) # area = long_square * long_square
-    print(f"Площадь квадрата = {sqrt}")
-elif choice == "2":
-    long_triangle = int(input("Введите длину  стороны треугольника: "))
-    height_triangle = int(input("Введите высоту треугольника: "))
-    sqrt_triangle = long_triangle * height_triangle / 2
-    print(f"Площадь треугольника = {sqrt_triangle}")
-else:
-    print("Вы ввели недопустимые данные!")
+# proposal = input('''1) Square
+# 2) Triangle
+# Enter a number: ''')
+# choice = proposal
+#
+# if choice == "1":
+#     long_square = int(input("Введите длину стороны квадрата: "))
+#     sqrt =   long_square * long_square # area = round(math.sqrt(long_square), 2)
+#     print(f"Площадь квадрата = {sqrt}")
+# elif choice == "2":
+#     long_triangle = int(input("Введите длину  стороны треугольника: "))
+#     height_triangle = int(input("Введите высоту треугольника: "))
+#     sqrt_triangle = long_triangle * height_triangle / 2
+#     print(f"Площадь треугольника = {sqrt_triangle}")
+# else:
+#     print("Вы ввели недопустимые данные!")
