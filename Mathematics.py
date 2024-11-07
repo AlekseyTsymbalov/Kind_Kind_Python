@@ -43,7 +43,7 @@ import math     # Подключил библиотеку математичес
 # стояние от центра до внешней границы.) Вычислите
 # площадь круга (π * радиус2)
 # radius = int(input("Введите радиус круга: "))
-# sqrt_circle = math.pi * radius * radius
+# sqrt_circle = math.pi * radius * radius # pi * (radius**2)
 #
 # print(sqrt_circle)
 
@@ -52,7 +52,8 @@ import math     # Подключил библиотеку математичес
 # и выведите его с точностью до трех знаков.
 # sqrt_cylinder = float(input("Введите радиус цилиндра: "))
 # cylinder_height = float(input("Введите высоту цилиндра: "))
-# volume = sqrt_cylinder * cylinder_height
+# area = math.pi * (sqrt_cylinder**2)
+# volume = area * cylinder_height
 #
 # print(round(volume, 3))
 
@@ -60,3 +61,34 @@ import math     # Подключил библиотеку математичес
 # чтобы разделить первое число на второе; вычислите остаток и выведите
 # ответ в виде, удобном для пользователя (например, если пользователь ввел 7 и 2,
 # выведите строку вида «если разделить 7 на 2, получится 3 с остатком 1»).
+# num_3 = int(input("Введите первое число: "))
+# num_4 = int(input("Введите второе число: "))
+# summ = num_3 // num_4
+# summ2 = num_3 % num_4
+#
+# print(f"Если разделить {num_3} на {num_4}, получится {summ} с остатком {summ2}")
+
+# Задача №034. Выведите следующее сообщение:
+#  1) Square
+#  2) Triangle
+#  Enter a number:
+#  Если пользователь вводит 1, программа запрашивает длину стороны квадрата и выводит его площадь.
+#  Если пользователь вводит 2, программа запрашивает длину стороны и высоту треугольника, проведенную
+#  к этой стороне, после чего выводит его площадь. Если пользователь вводит что-то другое, программа должна
+#  выдать подходящее сообщение об ошибке.
+proposal = input('''1) Square
+2) Triangle
+Enter a number: ''')
+choice = proposal
+
+if choice == "1":
+    long_square = int(input("Введите длину стороны квадрата: "))
+    sqrt = round(math.sqrt(long_square), 2) # area = long_square * long_square
+    print(f"Площадь квадрата = {sqrt}")
+elif choice == "2":
+    long_triangle = int(input("Введите длину  стороны треугольника: "))
+    height_triangle = int(input("Введите высоту треугольника: "))
+    sqrt_triangle = long_triangle * height_triangle / 2
+    print(f"Площадь треугольника = {sqrt_triangle}")
+else:
+    print("Вы ввели недопустимые данные!")
