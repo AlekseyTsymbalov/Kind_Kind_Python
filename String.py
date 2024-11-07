@@ -52,11 +52,11 @@
 #     print(full_name.upper())
 # else:
 #     print(name.lower())
-
+#
 # Зада №026
 # word = str(input("Enter the word: ")).lower()
 #
-# if word[0] in "aeiou":
+# if word[0] in "aeiou": # "a" "e"
 #     pig_latin = word + "way"
 # else:
 #     pig_latin = word[1:] + word[0] +"ay"
