@@ -34,9 +34,11 @@
 
 # Зада №023
 # words = input("Введите строку из стихотворения: ")
-# print(len(words))
-# print(words[0])
-# print(words[-1])
+# print(f"Длина строки {len(words)} символов")
+# nachalo = int(input("Введите начальную цифру с которой начать: "))
+# konec = int(input("Введите конечную цифру которой закончить: "))
+# chast = (words[nachalo:konec])
+# print(chast)
 
 # Зада №024
 # name = input("Введите своё имя: ")
@@ -52,11 +54,22 @@
 #     print(name.lower())
 
 # Зада №026
-word = str(input("Enter the word: ")).lower()
+# word = str(input("Enter the word: ")).lower()
+#
+# if word[0] in "aeiou":
+#     pig_latin = word + "way"
+# else:
+#     pig_latin = word[1:] + word[0] +"ay"
+#
+# print(f"Слово на поросячьей латыни: {pig_latin}")
 
-if word[0] in "aeiou":
-    pig_latin = word + "way"
-else:
-    pig_latin = word[1:] + word[0] +"ay"
-
-print(f"Слово на поросячьей латыни: {pig_latin}")
+# А можно так было РЕШИТЬ 026-ю
+# word = input("Please enter a word: ")
+# first = word[0]
+# length = len(word)
+# rest = word[1:length]
+# if first != "a" and first != "e" and first != "i" and first != "o" and first != "u":
+#    newword = rest + first + "ay"
+# else:
+#    newword = word + "way"
+# print(newword.lower())
