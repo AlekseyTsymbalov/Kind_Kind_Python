@@ -3,11 +3,11 @@
 # ID = name + str(num)
 # print(ID)
 
-# address = '''Маршала-Воронова 24
-# квартира 222
-# подъезд 2
-# 16 этаж'''
-# print(address)
+address = '''Маршала-Воронова 24
+квартира 222
+подъезд 2
+16 этаж'''
+print(address)
 
 # word = "hello world, and hi people!"
 # print(len(word)) # Длина строки в числах

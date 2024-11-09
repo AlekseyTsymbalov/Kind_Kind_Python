@@ -10,7 +10,6 @@
 #     for l in range(12, 0, - 2):
 #         print(f"Ваши вложенные значения: - {l}")
 
-
 # word = "Python"
 #
 # for i in word:
@@ -22,14 +21,12 @@
 # for i in range(0, 3):
 #     print(you_name)
 
-
 # Задача №036.
 # you_name = input("Введите своё имя: ")
 # digits = int(input("Введите число: "))
 #
 # for i in range(0, digits):
 #     print(you_name)
-
 
 # Задача №037.
 # you_name = input("Введите своё имя: ")
@@ -41,5 +38,13 @@
 you_name = input("Введите своё имя: ")
 digits = int(input("Введите число: "))
 
-for i in you_name:
-    print(i)
+for i in range(0, digits):
+    for j in you_name:
+        print(j)
+
+# Задача №039.
+# number = int(input("Введите число от 1 до 12: "))
+#
+# for i in range(1, 13):
+#     j = i * number
+#     print(f"{i} x {number} = {j}")
