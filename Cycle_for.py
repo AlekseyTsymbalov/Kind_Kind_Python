@@ -96,4 +96,4 @@ for i in range(0, 5):
     question = input(f"Хотите ли включить данное число {num} в суммирование? (да/нет)? ").lower()
     if question == "да":
         total = total + num
-print(total)
+print(total)    # Мозги отказываются думать...
